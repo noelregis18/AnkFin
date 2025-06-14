@@ -114,9 +114,9 @@ export default function Home() {
             <div className="card bg-transparent border-none shadow-none">
               <h3 className="text-white text-sm font-semibold mb-6">Products</h3>
               <ul className="space-y-2">
-                <li><Link href="/products" className="text-sm hover:text-white transition-colors">Features</Link></li>
-                <li><Link href="/products" className="text-sm hover:text-white transition-colors">Pricing</Link></li>
-                <li><Link href="/products" className="text-sm hover:text-white transition-colors">Enterprise</Link></li>
+                <li><Link href="/products#why-choose-flowbank" className="text-sm hover:text-white transition-colors">Features</Link></li>
+                <li><Link href="/pricing" className="text-sm hover:text-white transition-colors">Pricing</Link></li>
+                <li><Link href="/employers" className="text-sm hover:text-white transition-colors">Enterprise</Link></li>
               </ul>
             </div>
             <div className="card bg-transparent border-none shadow-none">
