@@ -1,6 +1,7 @@
 'use client'
 
 import { createContext, useContext, useEffect, useState } from 'react'
+import { supabase } from '@/lib/supabase'
 
 interface User {
   id: string
@@ -15,7 +16,7 @@ interface User {
 interface AuthContextType {
   user: User | null
   loading: boolean
-  signUp: (email: string, password: string, firstName?: string, lastName?: string, companyName?: string) => Promise<void>
+  signUp: (email: string, password: string, firstName?: string, lastName?: string, companyName?: string) => Promise<string | void>
   signIn: (email: string, password: string) => Promise<void>
   signOut: () => void
 }
@@ -33,48 +34,50 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    // On mount, check for token and user in localStorage
-    const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null
     const userData = typeof window !== 'undefined' ? localStorage.getItem('user') : null
-    if (token && userData) {
-      setUser(JSON.parse(userData))
+    if (userData) {
+      try {
+        setUser(JSON.parse(userData))
+      } catch (e) {
+        setUser(null)
+      }
     }
     setLoading(false)
   }, [])
 
   const signUp = async (email: string, password: string, firstName?: string, lastName?: string, companyName?: string) => {
-    // Call your backend API for registration
-    const res = await fetch('/api/auth/register', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password, firstName, lastName, companyName })
+    const { data, error } = await supabase.auth.signUp({
+      email,
+      password
     })
-    const data = await res.json()
-    if (!res.ok) {
-      throw new Error(data.error || 'Failed to register')
+    if (error) {
+      throw new Error(error.message)
     }
-    // Optionally, auto-login after sign up
-    // await signIn(email, password)
+    // If user is null, email confirmation is likely required
+    if (!data.user) {
+      return 'Check your email to confirm your account before logging in.'
+    }
+    setUser(data.user)
+    localStorage.setItem('user', JSON.stringify(data.user))
   }
 
   const signIn = async (email: string, password: string) => {
-    const res = await fetch('/api/auth/login', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password })
+    const { data, error } = await supabase.auth.signInWithPassword({
+      email,
+      password
     })
-    const data = await res.json()
-    if (!res.ok) {
-      throw new Error(data.error || 'Failed to login')
+    if (error) {
+      throw new Error(error.message)
     }
-    // Store token and user in localStorage
-    localStorage.setItem('token', data.token)
-    localStorage.setItem('user', JSON.stringify(data.user))
+    if (!data.user) {
+      throw new Error('No user found. Please check your credentials or confirm your email.')
+    }
     setUser(data.user)
+    localStorage.setItem('user', JSON.stringify(data.user))
   }
 
-  const signOut = () => {
-    localStorage.removeItem('token')
+  const signOut = async () => {
+    await supabase.auth.signOut()
     localStorage.removeItem('user')
     setUser(null)
   }

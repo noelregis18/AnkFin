@@ -6,8 +6,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'FlowBank - Modern Banking Solutions',
-  description: 'Experience seamless banking with smart automation and intelligent insights.',
+  title: 'AnkFin - Modern Banking Solutions',
+  description: 'Experience seamless banking with smart automation and intelligent insights with AnkFin.'
 }
 
 export default function RootLayout({

@@ -45,7 +45,7 @@ export default function APIPage() {
       {/* Header Section */}
       <div className="container mx-auto px-4 text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
-          FlowBank API Documentation
+          AnkFin API Documentation
         </h1>
         <p className="text-xl text-gray-300 max-w-2xl mx-auto">
           Build powerful financial applications with our comprehensive API suite. Integrate banking features into your applications with ease.
@@ -89,8 +89,8 @@ export default function APIPage() {
         </h2>
         <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 p-8 rounded-xl max-w-4xl mx-auto">
           <pre className="text-sm text-gray-300 overflow-x-auto">
-            <code>{`// Initialize FlowBank API client
-const flowbank = new FlowBankAPI({
+            <code>{`// Initialize AnkFin API client
+const ankfin = new AnkFinAPI({
   apiKey: 'your_api_key',
   environment: 'production'
 });
@@ -98,7 +98,7 @@ const flowbank = new FlowBankAPI({
 // Example: Get account balance
 async function getBalance() {
   try {
-    const balance = await flowbank.accounts.getBalance('acc_123');
+    const balance = await ankfin.accounts.getBalance('acc_123');
     console.log('Account balance:', balance);
   } catch (error) {
     console.error('Error:', error);
@@ -108,7 +108,7 @@ async function getBalance() {
 // Example: Create a transaction
 async function createTransaction() {
   try {
-    const transaction = await flowbank.transactions.create({
+    const transaction = await ankfin.transactions.create({
       amount: 1000,
       currency: 'USD',
       description: 'Payment for services',

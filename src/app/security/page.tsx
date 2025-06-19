@@ -7,37 +7,37 @@ export default function SecurityPage() {
   const securityFeatures = [
     {
       feature: "End-to-End Encryption",
-      flowbank: "256-bit AES encryption",
+      ankfin: "256-bit AES encryption",
       competitors: "128-bit encryption (Chime), 256-bit (YNAB, Rocket Money)",
       advantage: "Stronger encryption than most competitors"
     },
     {
       feature: "Multi-Factor Authentication",
-      flowbank: "Biometric, SMS, Email, and Hardware Key support",
+      ankfin: "Biometric, SMS, Email, and Hardware Key support",
       competitors: "Basic 2FA (Chime), SMS only (YNAB), Email + SMS (Rocket Money)",
       advantage: "Multiple authentication options for enhanced security"
     },
     {
       feature: "Fraud Detection",
-      flowbank: "AI-powered real-time monitoring",
+      ankfin: "AI-powered real-time monitoring",
       competitors: "Basic rule-based systems",
       advantage: "More sophisticated and proactive fraud prevention"
     },
     {
       feature: "Data Protection",
-      flowbank: "GDPR, CCPA, and SOC 2 Type II compliant",
+      ankfin: "GDPR, CCPA, and SOC 2 Type II compliant",
       competitors: "Basic compliance only",
       advantage: "Higher compliance standards"
     },
     {
       feature: "Secure Storage",
-      flowbank: "Distributed cloud storage with redundancy",
+      ankfin: "Distributed cloud storage with redundancy",
       competitors: "Single cloud provider",
       advantage: "Better data availability and protection"
     },
     {
       feature: "Regular Security Audits",
-      flowbank: "Quarterly third-party audits",
+      ankfin: "Quarterly third-party audits",
       competitors: "Annual or bi-annual audits",
       advantage: "More frequent security validation"
     }
@@ -51,7 +51,7 @@ export default function SecurityPage() {
           Enterprise-Grade Security
         </h1>
         <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-          Your financial data deserves the highest level of protection. See how FlowBank's security measures compare to industry standards.
+          Your financial data deserves the highest level of protection. See how AnkFin's security measures compare to industry standards.
         </p>
       </div>
 
@@ -62,7 +62,7 @@ export default function SecurityPage() {
             <thead>
               <tr className="bg-gray-800/50">
                 <th className="p-4 text-left">Security Feature</th>
-                <th className="p-4 text-left">FlowBank</th>
+                <th className="p-4 text-left">AnkFin</th>
                 <th className="p-4 text-left">Competitors</th>
                 <th className="p-4 text-left">Our Advantage</th>
               </tr>
@@ -77,7 +77,7 @@ export default function SecurityPage() {
                   className="border-b border-gray-800"
                 >
                   <td className="p-4 font-semibold">{feature.feature}</td>
-                  <td className="p-4 text-green-400">{feature.flowbank}</td>
+                  <td className="p-4 text-green-400">{feature.ankfin}</td>
                   <td className="p-4 text-gray-400">{feature.competitors}</td>
                   <td className="p-4 text-blue-400">{feature.advantage}</td>
                 </motion.tr>
@@ -137,14 +137,14 @@ export default function SecurityPage() {
           Ready to Experience Secure Banking?
         </h2>
         <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          Join thousands of businesses that trust FlowBank with their financial data.
+          Join thousands of businesses that trust AnkFin with their financial data.
         </p>
         <div className="flex justify-center gap-4">
           <Link href="/signup" className="btn btn-primary text-lg px-8 py-4">
             Get Started
           </Link>
           <a
-            href="mailto:ventureai2025@gmail.com?subject=FlowBank Security Inquiry&body=Hello,%0D%0A%0D%0AI'm interested in learning more about FlowBank's security features.%0D%0A%0D%0ABest regards,"
+            href="mailto:ventureai2025@gmail.com?subject=AnkFin Security Inquiry&body=Hello,%0D%0A%0D%0AI'm interested in learning more about AnkFin's security features.%0D%0A%0D%0ABest regards,"
             className="btn btn-secondary text-lg px-8 py-4"
           >
             Contact Sales

@@ -22,8 +22,12 @@ export default function RegisterPage() {
     const password = formData.get('password') as string
 
     try {
-      await signUp(email, password)
-      router.push('/dashboard')
+      const result = await signUp(email, password)
+      if (typeof result === 'string') {
+        setError(result)
+      } else {
+        router.push('/dashboard')
+      }
     } catch (error: any) {
       setError(error.message || 'Failed to create account')
     } finally {

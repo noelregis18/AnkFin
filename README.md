@@ -1,6 +1,6 @@
-# FlowBank - Smart Money Automation Platform
+# AnkFin - Smart Money Automation Platform
 
-FlowBank is a smart money automation platform designed to help users automate the allocation of their income into bills, savings, taxes, and investments, based on personalized financial goals.
+AnkFin is a smart money automation platform designed to help users automate the allocation of their income into bills, savings, taxes, and investments, based on personalized financial goals.
 
 ## Features
 
@@ -43,7 +43,7 @@ FlowBank is a smart money automation platform designed to help users automate th
 Create a `.env.local` file with the following variables:
 
 ```
-DATABASE_URL="postgresql://user:password@localhost:5432/flowbank"
+DATABASE_URL="postgresql://user:password@localhost:5432/ankfin"
 NEXTAUTH_SECRET="your-secret"
 NEXTAUTH_URL="http://localhost:3000"
 PLAID_CLIENT_ID="your-plaid-client-id"
@@ -51,22 +51,3 @@ PLAID_SECRET="your-plaid-secret"
 STRIPE_SECRET_KEY="your-stripe-secret-key"
 STRIPE_PUBLISHABLE_KEY="your-stripe-publishable-key"
 ```
-
-## Project Structure
-
-```
-src/
-├── app/              # Next.js app directory
-├── components/       # React components
-├── lib/             # Utility functions and configurations
-├── prisma/          # Database schema and migrations
-└── types/           # TypeScript type definitions
-```
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a new Pull Request 

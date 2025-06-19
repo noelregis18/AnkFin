@@ -21,8 +21,8 @@ export default function Login() {
     try {
       await signIn(email, password)
       router.push('/dashboard')
-    } catch (err) {
-      setError('Failed to sign in. Please check your credentials.')
+    } catch (err: any) {
+      setError(err.message || 'Failed to sign in. Please check your credentials.')
       console.error(err)
     } finally {
       setLoading(false)

@@ -58,7 +58,7 @@ export default function SolutionsPage() {
               Smart Money Management Made Simple
             </h1>
             <p className="text-xl text-gray-300 mb-8">
-              FlowBank automates your finances, eliminating manual budgeting stress and helping you build wealth efficiently through intelligent money management.
+              AnkFin automates your finances, eliminating manual budgeting stress and helping you build wealth efficiently through intelligent money management.
             </p>
             <div className="flex justify-center gap-4">
               <Link href="/signup" className="btn btn-primary text-lg px-8 py-3">
@@ -104,7 +104,7 @@ export default function SolutionsPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-12 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
-              Why Choose FlowBank?
+              Why Choose AnkFin?
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-xl p-6">
@@ -143,14 +143,14 @@ export default function SolutionsPage() {
             Ready to Transform Your Financial Management?
           </h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Join thousands of users who trust FlowBank to automate their finances and achieve their financial goals.
+            Join thousands of users who trust AnkFin to automate their finances and achieve their financial goals.
           </p>
           <div className="flex justify-center gap-4">
             <Link href="/signup" className="btn btn-primary text-lg px-8 py-3">
               Start Free Trial
             </Link>
             <a
-              href="mailto:ventureai2025@gmail.com?subject=FlowBank Solutions Inquiry&body=Hello,%0D%0A%0D%0AI'm interested in learning more about FlowBank's solutions.%0D%0A%0D%0ABest regards,"
+              href="mailto:ventureai2025@gmail.com?subject=AnkFin Solutions Inquiry&body=Hello,%0D%0A%0D%0AI'm interested in learning more about AnkFin's solutions.%0D%0A%0D%0ABest regards,"
               className="btn btn-secondary text-lg px-8 py-3"
             >
               Contact Sales

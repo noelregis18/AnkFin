@@ -3,9 +3,9 @@ import { getAuth } from 'firebase/auth'
 
 const firebaseConfig = {
   apiKey: "AIzaSyDummyKey123456789",
-  authDomain: "flowbank-dummy.firebaseapp.com",
-  projectId: "flowbank-dummy",
-  storageBucket: "flowbank-dummy.appspot.com",
+  authDomain: "ankfin-dummy.firebaseapp.com",
+  projectId: "ankfin-dummy",
+  storageBucket: "ankfin-dummy.appspot.com",
   messagingSenderId: "123456789",
   appId: "1:123456789:web:abcdef"
 }

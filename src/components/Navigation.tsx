@@ -15,7 +15,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/" className={styles.logo}>
-              FlowBank
+              AnkFin
             </Link>
             <div className="hidden md:flex ml-10 space-x-6">
               <Link href="/products" className={styles.navLink}>

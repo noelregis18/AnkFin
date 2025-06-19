@@ -378,11 +378,11 @@ export default function ProductsPage() {
         </div>
       </div>
 
-      {/* Why Choose FlowBank Section */}
-      <section id="why-choose-flowbank" className="py-24">
+      {/* Why Choose AnkFin Section */}
+      <section id="why-choose-ankfin" className="py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
-            Why Choose FlowBank?
+            Why Choose AnkFin?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <motion.div
@@ -445,14 +445,14 @@ export default function ProductsPage() {
           Ready to Get Started?
         </h2>
         <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          Join thousands of users who trust FlowBank for their financial needs.
+          Join thousands of users who trust AnkFin for their financial needs.
         </p>
         <div className="flex justify-center gap-4">
           <Link href="/signup" className="btn btn-primary text-lg px-8 py-3">
             Create Account
           </Link>
           <a
-            href="mailto:ventureai2025@gmail.com?subject=FlowBank Products Inquiry&body=Hello,%0D%0A%0D%0AI'm interested in learning more about FlowBank's financial products.%0D%0A%0D%0ABest regards,"
+            href="mailto:ventureai2025@gmail.com?subject=AnkFin Products Inquiry&body=Hello,%0D%0A%0D%0AI'm interested in learning more about AnkFin's financial products.%0D%0A%0D%0ABest regards,"
             className="btn btn-secondary text-lg px-8 py-3"
           >
             Contact Sales

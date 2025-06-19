@@ -40,7 +40,7 @@ export default function AboutPage() {
       {/* Header Section */}
       <div className="container mx-auto px-4 text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400">
-          About FlowBank
+          About AnkFin
         </h1>
         <p className="text-xl text-gray-300 max-w-2xl mx-auto">
           Revolutionizing the future of banking with innovative financial solutions.
@@ -60,42 +60,11 @@ export default function AboutPage() {
               Our Mission
             </h2>
             <p className="text-gray-300 text-lg mb-6">
-              FlowBank is dedicated to transforming the banking experience through innovative technology and customer-centric solutions. We believe in making financial services more accessible, secure, and efficient for everyone.
+              AnkFin is dedicated to transforming the banking experience through innovative technology and customer-centric solutions. We believe in making financial services more accessible, secure, and efficient for everyone.
             </p>
             <p className="text-gray-300 text-lg">
               Our platform combines cutting-edge technology with deep financial expertise to provide a seamless banking experience that empowers individuals and businesses to achieve their financial goals.
             </p>
-          </motion.div>
-        </div>
-      </div>
-
-      {/* Founder Section */}
-      <div className="container mx-auto px-4 mb-20">
-        <div className="max-w-4xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 p-8 rounded-xl"
-          >
-            <h2 className="text-3xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400">
-              Our Founder
-            </h2>
-            <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="w-48 h-48 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center">
-                <span className="text-4xl font-bold">VP</span>
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold mb-2">Ven-Kerry Prince</h3>
-                <p className="text-gray-400 mb-4">Founder & CEO</p>
-                <p className="text-gray-300 mb-4">
-                  Ven-Kerry Prince is a visionary leader with a strong background in marketing and business management. He holds a degree in Marketing Management from Kean University, where he developed a deep understanding of consumer behavior and market dynamics.
-                </p>
-                <p className="text-gray-300">
-                  With extensive experience in the financial technology sector, Ven-Kerry founded FlowBank with the mission to revolutionize the banking industry through innovative solutions and customer-centric approaches.
-                </p>
-              </div>
-            </div>
           </motion.div>
         </div>
       </div>
@@ -130,14 +99,14 @@ export default function AboutPage() {
           Join Us in Revolutionizing Banking
         </h2>
         <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-          Be part of the future of banking with FlowBank.
+          Be part of the future of banking with AnkFin.
         </p>
         <div className="flex justify-center gap-4">
           <Link href="/signup" className="btn btn-primary text-lg px-8 py-4">
             Get Started
           </Link>
           <a
-            href="mailto:ventureai2025@gmail.com?subject=FlowBank Partnership Inquiry&body=Hello,%0D%0A%0D%0AI'm interested in learning more about partnering with FlowBank.%0D%0A%0D%0ABest regards,"
+            href="mailto:ventureai2025@gmail.com?subject=AnkFin Partnership Inquiry&body=Hello,%0D%0A%0D%0AI'm interested in learning more about partnering with AnkFin.%0D%0A%0D%0ABest regards,"
             className="btn btn-secondary text-lg px-8 py-4"
           >
             Contact Us

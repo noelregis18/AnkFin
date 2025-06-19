@@ -7,7 +7,7 @@ export default function PrivacyPage() {
   const privacySections = [
     {
       title: "Data Protection",
-      content: "FlowBank adheres to strict data protection standards in compliance with US banking regulations. We implement industry-leading encryption and security measures to protect your personal and financial information."
+      content: "AnkFin adheres to strict data protection standards in compliance with US banking regulations. We implement industry-leading encryption and security measures to protect your personal and financial information."
     },
     {
       title: "Information Collection",
@@ -19,7 +19,7 @@ export default function PrivacyPage() {
     },
     {
       title: "Regulatory Compliance",
-      content: "FlowBank operates in full compliance with US banking regulations, including the Bank Secrecy Act (BSA), Anti-Money Laundering (AML) laws, and the Gramm-Leach-Bliley Act (GLBA)."
+      content: "AnkFin operates in full compliance with US banking regulations, including the Bank Secrecy Act (BSA), Anti-Money Laundering (AML) laws, and the Gramm-Leach-Bliley Act (GLBA)."
     }
   ]
 
@@ -67,7 +67,7 @@ export default function PrivacyPage() {
         </p>
         <div className="flex justify-center gap-4">
           <a
-            href="mailto:ventureai2025@gmail.com?subject=FlowBank Privacy Policy Inquiry&body=Hello,%0D%0A%0D%0AI have a question about FlowBank's privacy policy:%0D%0A%0D%0ABest regards,"
+            href="mailto:ventureai2025@gmail.com?subject=AnkFin Privacy Policy Inquiry&body=Hello,%0D%0A%0D%0AI have a question about AnkFin's privacy policy:%0D%0A%0D%0ABest regards,"
             className="btn btn-primary text-lg px-8 py-4"
           >
             Contact Us

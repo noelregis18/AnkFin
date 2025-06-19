@@ -7,7 +7,7 @@ export default function TermsPage() {
   const termsSections = [
     {
       title: "Account Terms",
-      content: "By opening an account with FlowBank, you agree to maintain accurate information, protect your account credentials, and comply with all applicable banking regulations. We reserve the right to close accounts that violate our terms."
+      content: "By opening an account with AnkFin, you agree to maintain accurate information, protect your account credentials, and comply with all applicable banking regulations. We reserve the right to close accounts that violate our terms."
     },
     {
       title: "Service Usage",
@@ -19,7 +19,7 @@ export default function TermsPage() {
     },
     {
       title: "Bank's Responsibilities",
-      content: "FlowBank is committed to providing secure, reliable banking services. We maintain FDIC insurance, implement robust security measures, and provide 24/7 customer support to address your concerns."
+      content: "AnkFin is committed to providing secure, reliable banking services. We maintain FDIC insurance, implement robust security measures, and provide 24/7 customer support to address your concerns."
     }
   ]
 
